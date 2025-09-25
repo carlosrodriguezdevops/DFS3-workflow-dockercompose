@@ -1,0 +1,11 @@
+FROM node:21-alpine
+
+WORKDIR /opt
+
+COPY . .
+
+RUN npm install
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
