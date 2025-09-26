@@ -23,4 +23,4 @@ jobs:
       run: docker compose -f docker-compose.yml up -d
 
     - name: Verificar app
-      run: curl -f http://vote:80/healthz
+      run: curl -f http://localhost:8080/healthz
